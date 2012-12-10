@@ -16,8 +16,10 @@ class sevenSegShift(object):
         """Initialized necessary variables for sevenSegShift class"""
       
         #creates new shift register object per display
+        
         for i in range(0, numDisp):
-            disp=new shiftRegister(ser, rclk, srclk)    #creates 
+            disp=new shiftRegister(ser, rclk, srclk)
+
         self.a=abcdefg[0]
         self.b=abcdefg[1]
         self.c=abcdefg[2]
@@ -26,6 +28,7 @@ class sevenSegShift(object):
         self.f=abcdefg[5]
         self.g=abcdefg[6]
         self.dp=abcdefg[7]
+
         if anodeCathode==0:
             self.ON=HIGH
             self.OFF=LOW
