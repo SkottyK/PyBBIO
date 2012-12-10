@@ -1,12 +1,12 @@
-# shift_test.py - Scott K 11/6/2012
-# 
-# Interfaces with shift registers to create displays.
-# 
-# This example is in the public domain
-from bbio import *
-
+"""shiftRegister.py - Scott K 11/6/12
+   Shift Register object for use with beagle bone
+"""
 
 #-----------------------------------------------------------------------------
+
+from bbio import *
+
+class shiftRegister(object):
 
 def _init_(self, ser=8, rclk=9, srclk=10, numReg=1):
     self.SER = ser	    				   	  #pin 14 on the 75HC595
