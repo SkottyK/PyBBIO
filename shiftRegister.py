@@ -18,6 +18,8 @@ def _init_(self, ser=8, rclk=9, srclk=10, numReg=1):
 
     self.registers[NUM_REG_PINS]
 
+    self.configure()
+
 
 
 def configure():
