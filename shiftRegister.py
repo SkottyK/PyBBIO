@@ -6,7 +6,7 @@
 
 from bbio import *
 
-class shiftRegister(object):
+class ShiftRegister(object):
 
 def _init_(self, ser=8, rclk=9, srclk=10, numReg=1):
     self.SER = ser	    				   	  #pin 14 on the 75HC595
