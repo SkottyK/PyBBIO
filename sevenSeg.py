@@ -39,4 +39,9 @@ class sevenSegShift(object):
             self.OFF=HIGH
 
     def setDigit(self, char, disp):
-        if disp<
+        if disp >= dispList.length(): disp=dispList.length()-1
+        dipList[disp].clearRegister()
+        switch char:
+            case 1:
+            case '1':
+                dispList[disp]
