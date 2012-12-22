@@ -14,19 +14,20 @@ class sevenSegShift(object):
 
     #Defines input options to output specific characters
     
-    options = {0 : zero,
-        1 : one,
-        '1': one,
-        2: two,
-        '2': two,
-        3: three,
-        '3': three,
-        4: four,
-        '4': four,
-        
+    dp=LOW
+    
+    ONE={LOW, HIGH, HIGH, LOW, LOW, LOW, LOW, dp}
+    TWO={HIGH, HIGH, LOW, HIGH, HIGH, LOW, HIGH, dp}
+    THREE={HIGH, HIGH, HIGH, HIGH, LOW, LOW, HIGH, dp}
+    FOUR={LOW, HIGH, HIGH, LOW, LOW, HIGH, HIGH, dp}
+    FIVE={HIGH, LOW, HIGH, HIGH, LOW, HIGH, HIGH, dp}
+    SIX={HIGH, LOW, HIGH, HIGH, HIGH, HIGH, HIGH, dp}
+    SEVEN={HIGH, HIGH, HIGH, LOW, LOW, LOW, LOW, dp}
+    EIGHT={HIGH, HIGH, HIGH, HIGH, HIGH, HIGH, HIGH, dp}
+    NINE={HIGH, HIGH, HIGH, HIGH, LOW, HIGH, HIGH, dp}
+    ZERO={HIGH, HIGH, HIGH, HIGH, HIGH, HIGH, LOW, dp}
 
-}
-
+    NUMS={ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, ZERO}
 
     def _init_(self, ser=8, rclk=9, srclk=10, anodeCathode=1, numDisp=1, abcdefgp={0,1,2,3,4,5,6,7,8}):
         """Initialized necessary variables for sevenSegShift class"""
