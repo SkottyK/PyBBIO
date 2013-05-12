@@ -1,15 +1,15 @@
 """
- Stepper - v1.0
+ StepperCNC - v1.0
  Copyright 2013 Scott Krulcik
 
- Stepper motor class to be used with beaglebone
+ Stepper motor class to be used with beaglebone in a CNC machine
 
  Note: "Position" does not refer to angle, it refers to linear distance traveled from a fixed point(0)
 """
 
 from bbio import *
 
-class Stepper(object):
+class StepperCNC(object):
 
   def __init__(self, dir_pin, step_pin, position=0, pitch=20):
     """Creates instance of StepperCNC class
