@@ -19,10 +19,19 @@ class Stepper(object):
     self.threadPitch=20
     self.distancePerStep=1.0/self.threadpitch
 
-  def step(numSteps=0):
+  def setPosition(self, position=0):
+    self.pos=position
 
-  def setPosition(position=0):
+  def getPosition(self):
+    return self.pos
 
-  def getPosition():
+  def setPitch(self, pitch):
+    self.threadPitch=pitch
+    self.distancePerStep=1.0/self.threadpitch
 
-  d
+  def step(self, numSteps=1):
+    if numSteps!=0:
+      self.dir=(HIGH if steps>0 else LOW)
+    pause=
+
+ 
